@@ -24,6 +24,6 @@ open class TabBarStackView : UIStackView {
         self.axis = .horizontal
         self.frame = .zero
         self.distribution = .fillEqually
-        self.alignment = .center
+        self.alignment = .fill
     }
 }

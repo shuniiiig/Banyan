@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabButtonView" customModule="Banyan">
+            <connections>
+                <outlet property="_view" destination="iN0-l3-epB" id="ZCm-OX-jjv"/>
+                <outlet property="tabImage" destination="TcH-uc-dLt" id="Fuy-Kv-loQ"/>
+                <outlet property="titleLabel" destination="klK-FR-kHo" id="0Gt-7q-nrU"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
@@ -56,8 +62,8 @@
                         <constraint firstItem="BO5-ze-HPT" firstAttribute="top" secondItem="liG-dx-4dR" secondAttribute="top" constant="5" id="0Ts-I6-e6u"/>
                         <constraint firstAttribute="trailing" secondItem="BO5-ze-HPT" secondAttribute="trailing" constant="10" id="UoJ-2R-3i2"/>
                         <constraint firstItem="TcH-uc-dLt" firstAttribute="centerX" secondItem="liG-dx-4dR" secondAttribute="centerX" id="Vg8-z9-oER"/>
+                        <constraint firstItem="klK-FR-kHo" firstAttribute="top" secondItem="TcH-uc-dLt" secondAttribute="bottom" constant="6" id="hXK-XD-iOI"/>
                         <constraint firstItem="klK-FR-kHo" firstAttribute="centerX" secondItem="TcH-uc-dLt" secondAttribute="centerX" id="mac-5r-hK4"/>
-                        <constraint firstAttribute="bottom" secondItem="klK-FR-kHo" secondAttribute="bottom" constant="5" id="oCJ-f6-XFR"/>
                         <constraint firstItem="TcH-uc-dLt" firstAttribute="top" secondItem="liG-dx-4dR" secondAttribute="top" constant="8" id="yf0-dZ-qSv"/>
                     </constraints>
                 </view>
@@ -71,16 +77,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="badgeView" destination="BO5-ze-HPT" id="LeU-eo-Jhm"/>
-                <outlet property="bagdeLabel" destination="qaQ-72-QDI" id="yQv-YK-Dv3"/>
-                <outlet property="imageView" destination="TcH-uc-dLt" id="4D1-Hl-zGw"/>
-                <outlet property="titleLabel" destination="klK-FR-kHo" id="KRz-yb-EVJ"/>
-            </connections>
             <point key="canvasLocation" x="136.80000000000001" y="152.47376311844079"/>
         </view>
     </objects>
     <resources>
-        <image name="tab" width="37.5" height="37.5"/>
+        <image name="tab" width="50" height="50"/>
     </resources>
 </document>
