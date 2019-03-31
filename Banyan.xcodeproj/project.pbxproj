@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E80DA1D224E638A00EB12B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DA1C224E638A00EB12B9 /* MainView.swift */; };
+		1E80DA1F224E639A00EB12B9 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E80DA1E224E639A00EB12B9 /* MainView.xib */; };
 		1E9791C82247AF1E00D8AD6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791C72247AF1E00D8AD6C /* AppDelegate.swift */; };
 		1E9791CA2247AF1E00D8AD6C /* BanyanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791C92247AF1E00D8AD6C /* BanyanViewController.swift */; };
 		1E9791CD2247AF1E00D8AD6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791CB2247AF1E00D8AD6C /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E80DA1C224E638A00EB12B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1E80DA1E224E639A00EB12B9 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		1E9791C42247AF1E00D8AD6C /* Banyan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banyan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9791C72247AF1E00D8AD6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E9791C92247AF1E00D8AD6C /* BanyanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanyanViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				1E9791F62247DBB800D8AD6C /* TabButtonView.swift */,
 				1E9791F82247DBEA00D8AD6C /* TabButtonView.xib */,
 				1E9791FE224A2CE300D8AD6C /* TabBarStackView.swift */,
+				1E80DA1C224E638A00EB12B9 /* MainView.swift */,
+				1E80DA1E224E639A00EB12B9 /* MainView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 				1E9791D22247AF2100D8AD6C /* LaunchScreen.storyboard in Resources */,
 				1E9791CF2247AF2100D8AD6C /* Assets.xcassets in Resources */,
 				1E9791CD2247AF1E00D8AD6C /* Main.storyboard in Resources */,
+				1E80DA1F224E639A00EB12B9 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 				1E9791CA2247AF1E00D8AD6C /* BanyanViewController.swift in Sources */,
 				1E9791FF224A2CE300D8AD6C /* TabBarStackView.swift in Sources */,
 				1E9791C82247AF1E00D8AD6C /* AppDelegate.swift in Sources */,
+				1E80DA1D224E638A00EB12B9 /* MainView.swift in Sources */,
 				1E9791F72247DBB800D8AD6C /* TabButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

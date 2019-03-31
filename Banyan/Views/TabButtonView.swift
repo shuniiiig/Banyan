@@ -19,19 +19,32 @@ public final class TabButtonView : UIControl {
         }
     }
     
+    @IBOutlet private(set) var baseView: UIView!
     @IBOutlet private(set) var tabImage: UIImageView!
-    @IBOutlet private(set) weak var titleLabel: UILabel!
+    @IBOutlet private(set) var titleLabel: UILabel!
+    private (set) var selectedTabImage: UIImage?
+    private (set) var currentTabImage: UIImage?
     
-    init(image :UIImage, title :String) {
+    init(image :UIImage, title :String, selectedImage :UIImage) {
         super.init(frame: .zero)
         UINib(nibName: "TabButtonView", bundle: Bundle(for:
             TabButtonView.self)).instantiate(withOwner: self, options: nil)
-        tabImage.image = image
-        titleLabel.text = title
+        self.tabImage.image = image
+        self.titleLabel.text = title
+        currentTabImage = image
+        selectedTabImage = selectedImage
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func resetImage() {
+        if self.isSelected {
+            tabImage.image = self.selectedTabImage
+        } else {
+            tabImage.image = self.currentTabImage
+        }
     }
     
 }
