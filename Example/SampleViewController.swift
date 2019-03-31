@@ -6,4 +6,11 @@
 //  Copyright © 2019 井草俊輔. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SampleViewController :UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
