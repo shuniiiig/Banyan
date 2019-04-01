@@ -22,8 +22,11 @@ public final class TabButtonView : UIControl {
     @IBOutlet private(set) var baseView: UIView!
     @IBOutlet private(set) var tabImage: UIImageView!
     @IBOutlet private(set) var titleLabel: UILabel!
+    @IBOutlet weak var badgeView: UIView!
+    @IBOutlet weak var badgeLabel: UILabel!
     private (set) var selectedTabImage: UIImage?
     private (set) var currentTabImage: UIImage?
+    
     
     init(image :UIImage, title :String, selectedImage :UIImage) {
         super.init(frame: .zero)

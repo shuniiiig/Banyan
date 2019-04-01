@@ -60,6 +60,7 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
         tabButtons![currentIndex].isSelected = true
         tabButtons![currentIndex].resetImage()
         tabButtons?.forEach ({ button in
+            button.badgeView.isHidden = true
             button.addTarget(self, action: #selector(self.tabEvent(sender:)), for: .touchUpInside)
             stackView.addArrangedSubview(button)
         })

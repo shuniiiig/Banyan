@@ -13,6 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabButtonView" customModule="Banyan">
             <connections>
                 <outlet property="_view" destination="iN0-l3-epB" id="ZCm-OX-jjv"/>
+                <outlet property="badgeLabel" destination="qaQ-72-QDI" id="abT-bc-5lH"/>
+                <outlet property="badgeView" destination="BO5-ze-HPT" id="MP8-wX-17l"/>
                 <outlet property="baseView" destination="liG-dx-4dR" id="GEb-pD-4yc"/>
                 <outlet property="tabImage" destination="TcH-uc-dLt" id="Fuy-Kv-loQ"/>
                 <outlet property="titleLabel" destination="klK-FR-kHo" id="0Gt-7q-nrU"/>
