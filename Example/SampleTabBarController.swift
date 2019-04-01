@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import BanyanViewController
 
-final class SampleTabBarController :BanyanViewController {
+final class SampleTabBarController : BanyanViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

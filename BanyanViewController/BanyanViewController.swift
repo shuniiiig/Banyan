@@ -41,7 +41,7 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLayoutSubviews()
     }
     
-    func addSelectedVC() {
+    public func addSelectedVC() {
         selectedVC = viewControllers[currentIndex]
         addChild(selectedVC!)
         selectedVC!.view.frame = mainView.bounds
@@ -49,14 +49,14 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
         selectedVC!.didMove(toParent: self)
     }
     
-    func removePreviousVC() {
+    public func removePreviousVC() {
         preCurrentVC = viewControllers[currentIndex]
         preCurrentVC!.willMove(toParent: nil)
         preCurrentVC!.view.removeFromSuperview()
         preCurrentVC!.removeFromParent()
     }
     
-    func setUpTabBar() {
+    public func setUpTabBar() {
         tabButtons![currentIndex].isSelected = true
         tabButtons![currentIndex].resetImage()
         tabButtons?.forEach ({ button in

@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E80DA1D224E638A00EB12B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DA1C224E638A00EB12B9 /* MainView.swift */; };
-		1E80DA1F224E639A00EB12B9 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E80DA1E224E639A00EB12B9 /* MainView.xib */; };
+		1E2AB0D0225258790084813E /* BanyanViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E2AB0CE225258790084813E /* BanyanViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E2AB0D3225258790084813E /* BanyanViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2AB0CC225258790084813E /* BanyanViewController.framework */; };
+		1E2AB0D4225258790084813E /* BanyanViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2AB0CC225258790084813E /* BanyanViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E2AB0D9225258E00084813E /* BanyanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791C92247AF1E00D8AD6C /* BanyanViewController.swift */; };
+		1E2AB0DA225259750084813E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E80DA1E224E639A00EB12B9 /* MainView.xib */; };
+		1E2AB0DB225259780084813E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DA1C224E638A00EB12B9 /* MainView.swift */; };
+		1E2AB0DC2252597F0084813E /* TabBarStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791FE224A2CE300D8AD6C /* TabBarStackView.swift */; };
+		1E2AB0DD225259850084813E /* TabButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791F82247DBEA00D8AD6C /* TabButtonView.xib */; };
+		1E2AB0DE225259890084813E /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791F62247DBB800D8AD6C /* TabButtonView.swift */; };
 		1E80DA272250F05F00EB12B9 /* SampleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DA262250F05F00EB12B9 /* SampleTabBarController.swift */; };
 		1E80DA292250F7B100EB12B9 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DA282250F7B100EB12B9 /* SampleViewController.swift */; };
 		1E9791C82247AF1E00D8AD6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791C72247AF1E00D8AD6C /* AppDelegate.swift */; };
-		1E9791CA2247AF1E00D8AD6C /* BanyanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791C92247AF1E00D8AD6C /* BanyanViewController.swift */; };
 		1E9791CD2247AF1E00D8AD6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791CB2247AF1E00D8AD6C /* Main.storyboard */; };
 		1E9791CF2247AF2100D8AD6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791CE2247AF2100D8AD6C /* Assets.xcassets */; };
 		1E9791D22247AF2100D8AD6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791D02247AF2100D8AD6C /* LaunchScreen.storyboard */; };
-		1E9791F72247DBB800D8AD6C /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791F62247DBB800D8AD6C /* TabButtonView.swift */; };
-		1E9791F92247DBEA00D8AD6C /* TabButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791F82247DBEA00D8AD6C /* TabButtonView.xib */; };
-		1E9791FF224A2CE300D8AD6C /* TabBarStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791FE224A2CE300D8AD6C /* TabBarStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1E2AB0D1225258790084813E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E9791BC2247AF1E00D8AD6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2AB0CB225258790084813E;
+			remoteInfo = BanyanViewController;
+		};
 		1E9791D92247AF2100D8AD6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E9791BC2247AF1E00D8AD6C /* Project object */;
@@ -38,7 +48,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E2AB0D8225258790084813E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E2AB0D4225258790084813E /* BanyanViewController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E2AB0CC225258790084813E /* BanyanViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BanyanViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2AB0CE225258790084813E /* BanyanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BanyanViewController.h; sourceTree = "<group>"; };
+		1E2AB0CF225258790084813E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E80DA1C224E638A00EB12B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1E80DA1E224E639A00EB12B9 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		1E80DA262250F05F00EB12B9 /* SampleTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTabBarController.swift; sourceTree = "<group>"; };
@@ -58,10 +85,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E2AB0C9225258790084813E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E9791C12247AF1E00D8AD6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2AB0D3225258790084813E /* BanyanViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2AB0CD225258790084813E /* BanyanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E9791F52247DB8800D8AD6C /* Views */,
+				1E9791C92247AF1E00D8AD6C /* BanyanViewController.swift */,
+				1E2AB0CE225258790084813E /* BanyanViewController.h */,
+				1E2AB0CF225258790084813E /* Info.plist */,
+			);
+			path = BanyanViewController;
+			sourceTree = "<group>";
+		};
 		1E80DA242250EF8100EB12B9 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +154,7 @@
 			children = (
 				1E80DA252250EF9700EB12B9 /* Supporting Files */,
 				1E80DA242250EF8100EB12B9 /* Example */,
-				1E9791C62247AF1E00D8AD6C /* Banyan */,
+				1E2AB0CD225258790084813E /* BanyanViewController */,
 				1E9791C52247AF1E00D8AD6C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,17 +165,9 @@
 				1E9791C42247AF1E00D8AD6C /* Banyan.app */,
 				1E9791D82247AF2100D8AD6C /* BanyanTests.xctest */,
 				1E9791E32247AF2100D8AD6C /* BanyanUITests.xctest */,
+				1E2AB0CC225258790084813E /* BanyanViewController.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1E9791C62247AF1E00D8AD6C /* Banyan */ = {
-			isa = PBXGroup;
-			children = (
-				1E9791F52247DB8800D8AD6C /* Views */,
-				1E9791C92247AF1E00D8AD6C /* BanyanViewController.swift */,
-			);
-			path = Banyan;
 			sourceTree = "<group>";
 		};
 		1E9791F52247DB8800D8AD6C /* Views */ = {
@@ -146,7 +184,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1E2AB0C7225258790084813E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2AB0D0225258790084813E /* BanyanViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1E2AB0CB225258790084813E /* BanyanViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2AB0D7225258790084813E /* Build configuration list for PBXNativeTarget "BanyanViewController" */;
+			buildPhases = (
+				1E2AB0C7225258790084813E /* Headers */,
+				1E2AB0C8225258790084813E /* Sources */,
+				1E2AB0C9225258790084813E /* Frameworks */,
+				1E2AB0CA225258790084813E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BanyanViewController;
+			productName = BanyanViewController;
+			productReference = 1E2AB0CC225258790084813E /* BanyanViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1E9791C32247AF1E00D8AD6C /* Banyan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E9791EC2247AF2100D8AD6C /* Build configuration list for PBXNativeTarget "Banyan" */;
@@ -154,10 +221,12 @@
 				1E9791C02247AF1E00D8AD6C /* Sources */,
 				1E9791C12247AF1E00D8AD6C /* Frameworks */,
 				1E9791C22247AF1E00D8AD6C /* Resources */,
+				1E2AB0D8225258790084813E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E2AB0D2225258790084813E /* PBXTargetDependency */,
 			);
 			name = Banyan;
 			productName = Banyan;
@@ -210,6 +279,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "井草俊輔";
 				TargetAttributes = {
+					1E2AB0CB225258790084813E = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					1E9791C32247AF1E00D8AD6C = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -239,20 +311,28 @@
 				1E9791C32247AF1E00D8AD6C /* Banyan */,
 				1E9791D72247AF2100D8AD6C /* BanyanTests */,
 				1E9791E22247AF2100D8AD6C /* BanyanUITests */,
+				1E2AB0CB225258790084813E /* BanyanViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E2AB0CA225258790084813E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2AB0DD225259850084813E /* TabButtonView.xib in Resources */,
+				1E2AB0DA225259750084813E /* MainView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E9791C22247AF1E00D8AD6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9791F92247DBEA00D8AD6C /* TabButtonView.xib in Resources */,
 				1E9791D22247AF2100D8AD6C /* LaunchScreen.storyboard in Resources */,
 				1E9791CF2247AF2100D8AD6C /* Assets.xcassets in Resources */,
 				1E9791CD2247AF1E00D8AD6C /* Main.storyboard in Resources */,
-				1E80DA1F224E639A00EB12B9 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,16 +353,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E2AB0C8225258790084813E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2AB0DE225259890084813E /* TabButtonView.swift in Sources */,
+				1E2AB0D9225258E00084813E /* BanyanViewController.swift in Sources */,
+				1E2AB0DC2252597F0084813E /* TabBarStackView.swift in Sources */,
+				1E2AB0DB225259780084813E /* MainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E9791C02247AF1E00D8AD6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9791CA2247AF1E00D8AD6C /* BanyanViewController.swift in Sources */,
-				1E9791FF224A2CE300D8AD6C /* TabBarStackView.swift in Sources */,
 				1E80DA272250F05F00EB12B9 /* SampleTabBarController.swift in Sources */,
 				1E9791C82247AF1E00D8AD6C /* AppDelegate.swift in Sources */,
-				1E80DA1D224E638A00EB12B9 /* MainView.swift in Sources */,
-				1E9791F72247DBB800D8AD6C /* TabButtonView.swift in Sources */,
 				1E80DA292250F7B100EB12B9 /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +391,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1E2AB0D2225258790084813E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E2AB0CB225258790084813E /* BanyanViewController */;
+			targetProxy = 1E2AB0D1225258790084813E /* PBXContainerItemProxy */;
+		};
 		1E9791DA2247AF2100D8AD6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1E9791C32247AF1E00D8AD6C /* Banyan */;
@@ -336,6 +428,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1E2AB0D5225258790084813E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4X276R3Z6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BanyanViewController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igusa.BanyanViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E2AB0D6225258790084813E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4X276R3Z6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BanyanViewController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igusa.BanyanViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1E9791EA2247AF2100D8AD6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -455,10 +605,12 @@
 		1E9791ED2247AF2100D8AD6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X276R3Z6N;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,10 +625,12 @@
 		1E9791EE2247AF2100D8AD6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X276R3Z6N;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,6 +727,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E2AB0D7225258790084813E /* Build configuration list for PBXNativeTarget "BanyanViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2AB0D5225258790084813E /* Debug */,
+				1E2AB0D6225258790084813E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1E9791BF2247AF1E00D8AD6C /* Build configuration list for PBXProject "Banyan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

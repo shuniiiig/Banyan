@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class TabButtonView : UIControl {
+public class TabButtonView : UIControl {
     
     @IBOutlet private(set) var _view: UIView! {
         didSet {
@@ -28,7 +28,7 @@ public final class TabButtonView : UIControl {
     private (set) var currentTabImage: UIImage?
     
     
-    init(image :UIImage, title :String, selectedImage :UIImage) {
+    public init(image :UIImage, title :String, selectedImage :UIImage) {
         super.init(frame: .zero)
         UINib(nibName: "TabButtonView", bundle: Bundle(for:
             TabButtonView.self)).instantiate(withOwner: self, options: nil)
@@ -38,7 +38,7 @@ public final class TabButtonView : UIControl {
         selectedTabImage = selectedImage
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
