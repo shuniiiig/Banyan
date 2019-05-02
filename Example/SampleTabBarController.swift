@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import BanyanViewController
+import Banyan
 
 final class SampleTabBarController : BanyanViewController {
     

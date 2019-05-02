@@ -75,7 +75,7 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
                 sender.isSelected = true
                 sender.resetImage()
                 preCurrentIndex = currentIndex
-                currentIndex = (tabButtons?.index(of: button))!
+                currentIndex = (tabButtons?.firstIndex(of: button))!
                 addSelectedVC()
             }
         })
