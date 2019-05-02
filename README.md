@@ -6,4 +6,4 @@
 
 For Installing with Carthage, add it to your Cartfile.
 
-github "shuniiiig/BanyanViewController"
+github "shuniiiig/Banyan"
