@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,9 +28,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab" translatesAutoresizingMaskIntoConstraints="NO" id="TcH-uc-dLt">
-                            <rect key="frame" x="9.5" y="2" width="30" height="30"/>
+                            <rect key="frame" x="13.5" y="5" width="22" height="22"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="30" id="Gg5-56-kH6"/>
+                                <constraint firstAttribute="width" constant="22" id="Gg5-56-kH6"/>
                                 <constraint firstAttribute="width" secondItem="TcH-uc-dLt" secondAttribute="height" id="nmi-l6-7Sx"/>
                             </constraints>
                         </imageView>
@@ -42,10 +41,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BO5-ze-HPT">
-                            <rect key="frame" x="29.5" y="2" width="15" height="15"/>
+                            <rect key="frame" x="29.5" y="5" width="11" height="11"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaQ-72-QDI">
-                                    <rect key="frame" x="5.5" y="2.5" width="4" height="10"/>
+                                    <rect key="frame" x="3.5" y="0.5" width="4" height="10"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="8"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -54,7 +53,7 @@
                             <color key="backgroundColor" red="1" green="0.94202540779999999" blue="0.50645722000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstItem="qaQ-72-QDI" firstAttribute="centerX" secondItem="BO5-ze-HPT" secondAttribute="centerX" id="1S1-Zj-fLo"/>
-                                <constraint firstAttribute="width" constant="15" id="3mH-Ac-7Fm"/>
+                                <constraint firstAttribute="width" constant="11" id="3mH-Ac-7Fm"/>
                                 <constraint firstAttribute="width" secondItem="BO5-ze-HPT" secondAttribute="height" multiplier="1:1" id="VSo-X1-RZ3"/>
                                 <constraint firstItem="qaQ-72-QDI" firstAttribute="centerY" secondItem="BO5-ze-HPT" secondAttribute="centerY" id="aks-jU-kJ8"/>
                             </constraints>
@@ -65,9 +64,9 @@
                         <constraint firstItem="TcH-uc-dLt" firstAttribute="centerX" secondItem="liG-dx-4dR" secondAttribute="centerX" id="Vg8-z9-oER"/>
                         <constraint firstItem="BO5-ze-HPT" firstAttribute="top" secondItem="TcH-uc-dLt" secondAttribute="top" id="esT-m7-y7h"/>
                         <constraint firstItem="BO5-ze-HPT" firstAttribute="trailing" secondItem="TcH-uc-dLt" secondAttribute="trailing" constant="5" id="gxZ-ss-e8C"/>
-                        <constraint firstItem="klK-FR-kHo" firstAttribute="top" secondItem="TcH-uc-dLt" secondAttribute="bottom" id="hXK-XD-iOI"/>
+                        <constraint firstItem="klK-FR-kHo" firstAttribute="top" secondItem="TcH-uc-dLt" secondAttribute="bottom" constant="5" id="hXK-XD-iOI"/>
                         <constraint firstItem="klK-FR-kHo" firstAttribute="centerX" secondItem="TcH-uc-dLt" secondAttribute="centerX" id="mac-5r-hK4"/>
-                        <constraint firstItem="TcH-uc-dLt" firstAttribute="top" secondItem="liG-dx-4dR" secondAttribute="top" constant="2" id="yf0-dZ-qSv"/>
+                        <constraint firstItem="TcH-uc-dLt" firstAttribute="top" secondItem="liG-dx-4dR" secondAttribute="top" constant="5" id="yf0-dZ-qSv"/>
                     </constraints>
                 </view>
             </subviews>
@@ -79,7 +78,6 @@
                 <constraint firstAttribute="bottom" secondItem="liG-dx-4dR" secondAttribute="bottom" id="z2d-YN-51S"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="136.80000000000001" y="152.47376311844079"/>
         </view>
     </objects>

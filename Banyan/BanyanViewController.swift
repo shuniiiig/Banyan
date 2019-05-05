@@ -28,8 +28,8 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
     
     override open func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        stackView.frame.origin.y = self.view.frame.size.height - _barHeight
-        stackView.frame.size.height = self._barHeight
+        stackView.frame.origin.y = self.view.frame.size.height - barHeight
+        stackView.frame.size.height = self.barHeight
         stackView.frame.size.width = self.view.frame.size.width
         mainView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0.0).isActive = true
         mainView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0.0).isActive = true
@@ -81,9 +81,8 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
         })
     }
     
-    // change bar height
-    private var _barHeight: CGFloat = 74
-    open var barHeight: CGFloat {
+    private var _barHeight: CGFloat = 49
+    private var barHeight: CGFloat {
         get {
             if #available(iOS 11.0, *) {
                 return _barHeight + view.safeAreaInsets.bottom
