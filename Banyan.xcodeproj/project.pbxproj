@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E060747227B43B200A08867 /* GradationTabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E060746227B43B200A08867 /* GradationTabButtonView.swift */; };
 		1E2AB0D0225258790084813E /* Banyan.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E2AB0CE225258790084813E /* Banyan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E2AB0D3225258790084813E /* Banyan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2AB0CC225258790084813E /* Banyan.framework */; };
 		1E2AB0D4225258790084813E /* Banyan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2AB0CC225258790084813E /* Banyan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -19,6 +18,10 @@
 		1E2AB0DE225259890084813E /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791F62247DBB800D8AD6C /* TabButtonView.swift */; };
 		1E80DA272250F05F00EB12B9 /* SampleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DA262250F05F00EB12B9 /* SampleTabBarController.swift */; };
 		1E80DA292250F7B100EB12B9 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80DA282250F7B100EB12B9 /* SampleViewController.swift */; };
+		1E8E061322805BAB00A7110E /* GradationTabButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E061222805BAB00A7110E /* GradationTabButtonView.xib */; };
+		1E8E061522805FC200A7110E /* RoundBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E061422805FC200A7110E /* RoundBadgeView.swift */; };
+		1E8E061622806C0100A7110E /* GradationTabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E060746227B43B200A08867 /* GradationTabButtonView.swift */; };
+		1E8E061822807BFE00A7110E /* GradationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E061722807BFE00A7110E /* GradationView.swift */; };
 		1E9791C82247AF1E00D8AD6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9791C72247AF1E00D8AD6C /* AppDelegate.swift */; };
 		1E9791CD2247AF1E00D8AD6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791CB2247AF1E00D8AD6C /* Main.storyboard */; };
 		1E9791CF2247AF2100D8AD6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9791CE2247AF2100D8AD6C /* Assets.xcassets */; };
@@ -72,6 +75,9 @@
 		1E80DA1E224E639A00EB12B9 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		1E80DA262250F05F00EB12B9 /* SampleTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTabBarController.swift; sourceTree = "<group>"; };
 		1E80DA282250F7B100EB12B9 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		1E8E061222805BAB00A7110E /* GradationTabButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradationTabButtonView.xib; sourceTree = "<group>"; };
+		1E8E061422805FC200A7110E /* RoundBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBadgeView.swift; sourceTree = "<group>"; };
+		1E8E061722807BFE00A7110E /* GradationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradationView.swift; sourceTree = "<group>"; };
 		1E9791C42247AF1E00D8AD6C /* BanyanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanyanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9791C72247AF1E00D8AD6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E9791C92247AF1E00D8AD6C /* BanyanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanyanViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +187,9 @@
 				1E80DA1C224E638A00EB12B9 /* MainView.swift */,
 				1E80DA1E224E639A00EB12B9 /* MainView.xib */,
 				1E060746227B43B200A08867 /* GradationTabButtonView.swift */,
+				1E8E061222805BAB00A7110E /* GradationTabButtonView.xib */,
+				1E8E061422805FC200A7110E /* RoundBadgeView.swift */,
+				1E8E061722807BFE00A7110E /* GradationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2AB0DD225259850084813E /* TabButtonView.xib in Resources */,
+				1E8E061322805BAB00A7110E /* GradationTabButtonView.xib in Resources */,
 				1E2AB0DA225259750084813E /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,9 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8E061522805FC200A7110E /* RoundBadgeView.swift in Sources */,
 				1E2AB0DE225259890084813E /* TabButtonView.swift in Sources */,
+				1E8E061622806C0100A7110E /* GradationTabButtonView.swift in Sources */,
 				1E2AB0D9225258E00084813E /* BanyanViewController.swift in Sources */,
 				1E2AB0DC2252597F0084813E /* TabBarStackView.swift in Sources */,
+				1E8E061822807BFE00A7110E /* GradationView.swift in Sources */,
 				1E2AB0DB225259780084813E /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +384,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E060747227B43B200A08867 /* GradationTabButtonView.swift in Sources */,
 				1E80DA272250F05F00EB12B9 /* SampleTabBarController.swift in Sources */,
 				1E9791C82247AF1E00D8AD6C /* AppDelegate.swift in Sources */,
 				1E80DA292250F7B100EB12B9 /* SampleViewController.swift in Sources */,

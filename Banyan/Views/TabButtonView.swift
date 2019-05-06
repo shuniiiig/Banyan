@@ -22,8 +22,8 @@ public class TabButtonView : UIControl {
     @IBOutlet private(set) var baseView: UIView!
     @IBOutlet private(set) var tabImage: UIImageView!
     @IBOutlet private(set) var titleLabel: UILabel!
-    @IBOutlet weak var badgeView: UIView!
-    @IBOutlet weak var badgeLabel: UILabel!
+    @IBOutlet open weak var badgeView: RoundBadgeView!
+    @IBOutlet open weak var badgeLabel: UILabel!
     private (set) var selectedTabImage: UIImage?
     private (set) var currentTabImage: UIImage?
     
@@ -49,5 +49,4 @@ public class TabButtonView : UIControl {
             tabImage.image = self.currentTabImage
         }
     }
-    
 }

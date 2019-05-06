@@ -26,6 +26,14 @@ final class SampleTabBarController : BanyanViewController {
                                      selectedImage: UIImage(named: "tab2")!)
         let fourthTab = TabButtonView(image: UIImage(named: "tab")!, title: "edit",
                                       selectedImage: UIImage(named: "tab2")!)
+//        let firstTab = GradationTabButtonView(image: UIImage(named: "tab")!,
+//                                     selectedImage: UIImage(named: "tab2")!)
+//        let secondTab = GradationTabButtonView(image: UIImage(named: "tab")!,
+//                                      selectedImage: UIImage(named: "tab2")!)
+//        let thirdTab = GradationTabButtonView(image: UIImage(named: "tab")!,
+//                                     selectedImage: UIImage(named: "tab2")!)
+//        let fourthTab = GradationTabButtonView(image: UIImage(named: "tab")!,
+//                                      selectedImage: UIImage(named: "tab2")!)
         self.tabButtons = [firstTab, secondTab, thirdTab, fourthTab]
         self.setUpTabBar()
     }
