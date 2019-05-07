@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class BanyanViewController: UIViewController, UIScrollViewDelegate {
+open class BanyanViewController: UIViewController, UIScrollViewDelegate{
     
     open var viewControllers = [UIViewController]()
     open private(set) var currentIndex = 0
@@ -18,6 +18,8 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
     open private(set) var selectedVC: UIViewController?
     open private(set) var preCurrentVC: UIViewController?
     var mainView = MainView()
+    var defaultColor: UIColor?
+    var selectedColor: UIColor?
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -63,16 +65,25 @@ open class BanyanViewController: UIViewController, UIScrollViewDelegate {
             button.badgeView.isHidden = true
             button.addTarget(self, action: #selector(self.tabEvent(sender:)), for: .touchUpInside)
             stackView.addArrangedSubview(button)
+            button.titleLabel.textColor = self.defaultColor
         })
+        tabButtons![currentIndex].titleLabel.textColor = self.selectedColor
+    }
+    
+    public func setTextColor(defaultColor :UIColor, selectedColor: UIColor) {
+        self.defaultColor = defaultColor
+        self.selectedColor = selectedColor
     }
     
     @objc func tabEvent(sender: TabButtonView) {
         removePreviousVC()
         tabButtons?.forEach ({ button in
             button.isSelected = false
+            button.titleLabel.textColor = self.defaultColor
             button.resetImage()
             if button == sender {
                 sender.isSelected = true
+                sender.titleLabel.textColor = self.selectedColor
                 sender.resetImage()
                 preCurrentIndex = currentIndex
                 currentIndex = (tabButtons?.firstIndex(of: button))!

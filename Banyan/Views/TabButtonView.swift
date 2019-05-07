@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import Foundation
 
 public class TabButtonView : UIControl {
-    
     @IBOutlet private(set) var _view: UIView! {
         didSet {
             _view.frame = bounds
@@ -24,8 +24,8 @@ public class TabButtonView : UIControl {
     @IBOutlet private(set) var titleLabel: UILabel!
     @IBOutlet open weak var badgeView: RoundBadgeView!
     @IBOutlet open weak var badgeLabel: UILabel!
-    private (set) var selectedTabImage: UIImage?
-    private (set) var currentTabImage: UIImage?
+    private (set) var selectedTabImage: UIImage!
+    private (set) var currentTabImage: UIImage!
     
     
     public init(image :UIImage, title :String, selectedImage :UIImage) {

@@ -18,6 +18,7 @@ final class SampleTabBarController : BanyanViewController {
     }
     
     func setUpButton() {
+        setTextColor(defaultColor: .black, selectedColor: .red)
         let firstTab = TabButtonView(image: UIImage(named: "tab")!, title: "home",
                                      selectedImage: UIImage(named: "tab2")!)
         let secondTab = TabButtonView(image: UIImage(named: "tab")!, title: "message",

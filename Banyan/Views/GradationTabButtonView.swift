@@ -23,8 +23,8 @@ public class GradationTabButtonView : UIControl {
     @IBOutlet private(set) var tabImage: UIImageView!
     @IBOutlet open weak var badgeView: RoundBadgeView!
     @IBOutlet open weak var badgeLabel: UILabel!
-    private (set) var selectedTabImage: UIImage?
-    private (set) var currentTabImage: UIImage?
+    private (set) var selectedTabImage: UIImage!
+    private (set) var currentTabImage: UIImage!
     
     public init(image :UIImage, selectedImage :UIImage) {
         super.init(frame: .zero)
