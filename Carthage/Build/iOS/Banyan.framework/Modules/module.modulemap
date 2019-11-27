@@ -1,0 +1,11 @@
+framework module Banyan {
+  umbrella header "Banyan.h"
+
+  export *
+  module * { export * }
+}
+
+module Banyan.Swift {
+    header "Banyan-Swift.h"
+    requires objc
+}

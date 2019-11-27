@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "60c77fa9e86a46b8a8d6a375911ffd2547d90cf0",
+  "iOS" : [
+    {
+      "name" : "Banyan",
+      "hash" : "e3bec52caadb674711ac5e3ac64fd18adba8328a70beea15adee4623be8e35bc",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ]
+}
